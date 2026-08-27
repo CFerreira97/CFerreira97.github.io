@@ -1,231 +1,338 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carla Ferreira — Cardiac Physiologist | Data Scientist</title>
-<meta name="description" content="Portfolio de Carla Ferreira — Cardiac Physiologist, Biomedical Engineer e Data Scientist.">
+<meta name="description" content="Carla Ferreira — Cardiac Physiologist, Biomedical Engineer and Data Scientist. Turning clinical and business data into actionable insight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+  // Applied before paint so an overridden theme does not flash the default one.
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) { /* storage unavailable */ }
+</script>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="hero">
-    <img class="avatar" src="avatar.jpg" alt="Carla Ferreira" width="92" height="92">
-    <div class="hero-text">
-      <h1>Carla Ferreira</h1>
-      <p class="title">Cardiac Physiologist &nbsp;|&nbsp; Biomedical Engineer &nbsp;|&nbsp; Data Scientist</p>
-      <div class="contact-row">
-        <a href="mailto:carlaferreira_97@hotmail.com">carlaferreira_97@hotmail.com</a>
-        <span>+351 969 706 429</span>
-        <span>Frielas, Loures, Portugal</span>
-        <a href="https://www.linkedin.com/in/carla-sofia-ferreira" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/CFerreira97" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </header>
+<a class="skip-link" href="#about">Skip to content</a>
 
-  <section id="summary">
-    <h2 class="section-title">Resumo</h2>
-    <p class="summary">
-      Cardiac Physiologist com um Mestrado em Engenharia Biomédica e uma Pós-Graduação em
-      Enterprise Data Science and Analytics. Experiência a traduzir dados clínicos e de negócio
-      complexos em insights acionáveis através de análise estatística, modelação preditiva e
-      dashboards interativos. Combina conhecimento de domínio em saúde com competências técnicas
-      em Python, SQL e plataformas cloud. Em busca de uma posição júnior em dados para aplicar
-      capacidades analíticas e contribuir para decisões orientadas por dados num ambiente colaborativo.
-    </p>
-  </section>
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">CF</span>
+      <span class="brand-name">Carla Ferreira</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+    </button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
 
-  <section id="skills">
-    <h2 class="section-title">Competências Técnicas</h2>
-    <dl class="skills-grid">
-      <div>
-        <dt>Programming &amp; Analytics</dt>
-        <dd>Python (Pandas, Scikit-learn, XGBoost, Statsmodels), R, SQL (T-SQL, PostgreSQL), DAX</dd>
-      </div>
-      <div>
-        <dt>Cloud &amp; Big Data</dt>
-        <dd>AWS (S3, Glue, Athena), Azure (Cosmos DB, Databricks), Microsoft Fabric, DuckDB</dd>
-      </div>
-      <div>
-        <dt>Databases</dt>
-        <dd>SQL Server, NoSQL (MongoDB, Cassandra, Table API), Query Optimization, Dimensional Modeling</dd>
-      </div>
-      <div>
-        <dt>Machine Learning</dt>
-        <dd>Predictive Modeling, Feature Engineering, SHAP/LIME, Hyperparameter Tuning, SMOTE</dd>
-      </div>
-      <div>
-        <dt>Visualization &amp; BI</dt>
-        <dd>Power BI, Dash, Plotly, Matplotlib, Seaborn, Interactive Dashboards</dd>
-      </div>
-      <div>
-        <dt>Tools &amp; Development</dt>
-        <dd>Git, Jupyter, Anaconda, Hugging Face, VS Code, Polars</dd>
-      </div>
-    </dl>
-  </section>
+<main id="top">
 
-  <section id="experience">
-    <h2 class="section-title">Experiência Profissional</h2>
-
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Cardiac Physiologist</h3>
-        <span class="org">June 2020 – Present</span>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img class="avatar" src="avatar.jpg" alt="Portrait of Carla Ferreira" width="120" height="120">
+      <div class="hero-text">
+        <p class="eyebrow">Lisbon, Portugal</p>
+        <h1>Carla&nbsp;Ferreira</h1>
+        <p class="tagline">
+          <span>Cardiac Physiologist</span>
+          <span>Biomedical Engineer</span>
+          <span>Data Scientist</span>
+        </p>
+        <p class="hero-line">
+          Turning complex clinical and business datasets into decisions people can act on.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:carlaferreira_97@hotmail.com">Get in touch</a>
+          <a class="btn" href="Carla-Ferreira-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <ul class="contact-row">
+          <li><a href="mailto:carlaferreira_97@hotmail.com">carlaferreira_97@hotmail.com</a></li>
+          <li><a href="tel:+351969706429">+351 969 706 429</a></li>
+          <li><a href="https://www.linkedin.com/in/carla-sofia-ferreira" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/CFerreira97" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
       </div>
-      <p class="place">Hospital de Santa Cruz, Centro Hospitalar de Lisboa Ocidental</p>
-      <ul>
-        <li>ECG, ABPM and Tilt Test monitoring</li>
-        <li>Holter monitoring and final report</li>
-        <li>Performing Stress Test, Cardiorespiratory Stress Test, Exercise Stress Test and/or Pharmacologic Stress Test in the context of Myocardial Scintigraphy</li>
-        <li>Follow-up consultation and remote monitoring assessment for patients with implantable cardiac devices</li>
-        <li>Streamlined operational workflows by developing data management tools for scheduling, inventory tracking and resource allocation, improving team efficiency and reducing administrative overhead</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Cardiac Physiologist</h3>
-        <span class="org">Feb 2025 – Present</span>
-      </div>
-      <p class="place">Serviços Sociais da Câmara Municipal de Lisboa</p>
-      <ul>
-        <li>ECG monitoring</li>
-        <li>Holter final report</li>
-        <li>Performing Stress Test</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Cardiac Physiologist</h3>
-        <span class="org">Dec 2019 – Jun 2020</span>
-      </div>
-      <p class="place">Centro Clínico de Lisboa do SBSI/SAMS</p>
-      <ul>
-        <li>ECG, Holter and ABPM monitoring</li>
-        <li>Performing Stress Test, Polysomnography and Pulmonary Function Tests</li>
-      </ul>
     </div>
   </section>
 
-  <section id="education">
-    <h2 class="section-title">Educação</h2>
+  <div class="wrap">
 
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Postgraduate Program in Enterprise Data Science and Analytics</h3>
-        <span class="org">Feb 2025 – Feb 2026</span>
+    <section id="about" class="reveal">
+      <h2 class="section-title"><span class="num">01</span> About</h2>
+      <p class="lede">
+        Cardiac Physiologist with an MSc in Biomedical Engineering and a completed Postgraduate
+        Program in Enterprise Data Science and Analytics. Experienced in translating complex
+        clinical and business datasets into actionable insights through statistical analysis,
+        predictive modeling and interactive dashboards. Combines healthcare domain expertise with
+        technical skills in Python, SQL and cloud platforms. Seeking a junior data role to apply
+        analytical capabilities and contribute to data-driven decision-making in a collaborative
+        environment.
+      </p>
+      <div class="stat-row">
+        <div class="stat"><strong>6+</strong><span>years in clinical practice</span></div>
+        <div class="stat"><strong>18</strong><span>final grade, MSc &amp; postgrad</span></div>
+        <div class="stat"><strong>32M</strong><span>records processed in cloud pipelines</span></div>
       </div>
-      <p class="place">NOVA Information Management School (NOVA IMS), Universidade Nova de Lisboa — Final grade: 18</p>
-    </div>
+    </section>
 
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Master's Degree in Biomedical Engineering</h3>
-        <span class="org">Sept 2020 – May 2024</span>
+    <section id="skills" class="reveal">
+      <h2 class="section-title"><span class="num">02</span> Technical Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Programming &amp; Analytics</h3>
+          <ul class="tags">
+            <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>XGBoost</li>
+            <li>Statsmodels</li><li>R</li><li>SQL</li><li>T-SQL</li><li>PostgreSQL</li><li>DAX</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Cloud &amp; Big Data</h3>
+          <ul class="tags">
+            <li>AWS S3</li><li>AWS Glue</li><li>AWS Athena</li><li>Azure Cosmos DB</li>
+            <li>Databricks</li><li>Microsoft Fabric</li><li>DuckDB</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Databases</h3>
+          <ul class="tags">
+            <li>SQL Server</li><li>MongoDB</li><li>Cassandra</li><li>Table API</li>
+            <li>Query Optimization</li><li>Dimensional Modeling</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Machine Learning</h3>
+          <ul class="tags">
+            <li>Predictive Modeling</li><li>Feature Engineering</li><li>SHAP</li><li>LIME</li>
+            <li>Hyperparameter Tuning</li><li>SMOTE</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Visualization &amp; BI</h3>
+          <ul class="tags">
+            <li>Power BI</li><li>Dash</li><li>Plotly</li><li>Matplotlib</li>
+            <li>Seaborn</li><li>Interactive Dashboards</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Tools &amp; Development</h3>
+          <ul class="tags">
+            <li>Git</li><li>Jupyter</li><li>Anaconda</li><li>Hugging Face</li>
+            <li>VS Code</li><li>Polars</li>
+          </ul>
+        </article>
       </div>
-      <p class="place">Instituto Superior de Engenharia de Lisboa (ISEL), Instituto Politécnico de Lisboa — Final grade: 18</p>
-    </div>
+    </section>
 
-    <div class="entry">
-      <div class="entry-head">
-        <h3>Bachelor's Degree in Clinical Physiology</h3>
-        <span class="org">Sept 2015 – Sept 2019</span>
+    <section id="experience" class="reveal">
+      <h2 class="section-title"><span class="num">03</span> Professional Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Cardiac Physiologist</h3>
+            <span class="period current">June 2020 — Present</span>
+          </div>
+          <p class="org">Hospital de Santa Cruz, Centro Hospitalar de Lisboa Ocidental</p>
+          <ul class="bullets">
+            <li>ECG, ABPM and Tilt Test monitoring.</li>
+            <li>Holter monitoring and final report.</li>
+            <li>Performing Stress Test, Cardiorespiratory Stress Test, Exercise Stress Test and/or Pharmacologic Stress Test in the context of Myocardial Scintigraphy.</li>
+            <li>Follow-up consultation and remote monitoring assessment for patients with implantable cardiac devices.</li>
+            <li>Streamlined operational workflows by developing data management tools for scheduling, inventory tracking and resource allocation, improving team efficiency and reducing administrative overhead.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Cardiac Physiologist</h3>
+            <span class="period current">Feb 2025 — Present</span>
+          </div>
+          <p class="org">Serviços Sociais da Câmara Municipal de Lisboa</p>
+          <ul class="bullets">
+            <li>ECG monitoring.</li>
+            <li>Holter final report.</li>
+            <li>Performing Stress Test.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Cardiac Physiologist</h3>
+            <span class="period">Dec 2019 — Jun 2020</span>
+          </div>
+          <p class="org">Centro Clínico de Lisboa do SBSI / SAMS</p>
+          <ul class="bullets">
+            <li>ECG, Holter and ABPM monitoring.</li>
+            <li>Performing Stress Test, Polysomnography and Pulmonary Function Tests.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2 class="section-title"><span class="num">04</span> Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Postgraduate Program in Enterprise Data Science and Analytics</h3>
+            <span class="period">Feb 2025 — Feb 2026</span>
+          </div>
+          <p class="org">NOVA Information Management School (NOVA IMS), Universidade Nova de Lisboa</p>
+          <p class="grade">Final grade: <strong>18</strong>/20</p>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Master's Degree in Biomedical Engineering</h3>
+            <span class="period">Sept 2020 — May 2024</span>
+          </div>
+          <p class="org">Instituto Superior de Engenharia de Lisboa (ISEL), Instituto Politécnico de Lisboa</p>
+          <p class="grade">Final grade: <strong>18</strong>/20</p>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>Bachelor's Degree in Clinical Physiology</h3>
+            <span class="period">Sept 2015 — Sept 2019</span>
+          </div>
+          <p class="org">Escola Superior de Tecnologia da Saúde de Lisboa (ESTeSL), Instituto Politécnico de Lisboa</p>
+          <p class="grade">Final grade: <strong>14</strong>/20</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2 class="section-title"><span class="num">05</span> Data Science Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>Retail Sales Analytics &amp; Business Intelligence</h3>
+          <ul class="tags accent">
+            <li>Power BI</li><li>Microsoft Fabric</li><li>DAX</li>
+          </ul>
+          <ul class="bullets">
+            <li>Developed an end-to-end business intelligence solution for multi-location retail data, designing a star schema semantic model and implementing multiple DAX measures for sales and profitability analysis.</li>
+            <li>Built interactive Power BI dashboards to monitor revenue trends, profit margins and product performance, supporting data-driven decisions in inventory management and pricing strategy.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Employee Attrition Risk Modeling</h3>
+          <ul class="tags accent">
+            <li>Python</li><li>XGBoost</li><li>SMOTE</li><li>Hugging Face</li>
+          </ul>
+          <ul class="bullets">
+            <li>Built and deployed an XGBoost classification model for employee turnover prediction on the Hugging Face platform, enabling HR teams to identify at-risk employees.</li>
+            <li>Generated actionable insights using SHAP/LIME explainability techniques, revealing overtime and job satisfaction as primary attrition drivers.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Colorectal Cancer Survival Prediction</h3>
+          <ul class="tags accent">
+            <li>Python</li><li>Scikit-learn</li><li>SHAP</li><li>LIME</li>
+          </ul>
+          <ul class="bullets">
+            <li>Evaluated and compared multiple classification models on a real-world clinical dataset, improving performance through feature engineering and hyperparameter tuning.</li>
+            <li>Applied explainable AI techniques to identify key predictive factors such as tumor size, cancer stage and treatment type, supporting model interpretability in a clinical context.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Database Design &amp; Auction System</h3>
+          <ul class="tags accent">
+            <li>SQL</li><li>T-SQL</li><li>Azure</li>
+          </ul>
+          <ul class="bullets">
+            <li>Architected an auction system with stored procedures, transaction handling and automated bid validation for concurrent users.</li>
+            <li>Conducted market analysis to identify optimal store locations using sales patterns and demographic data.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Big Data Analysis &amp; Cloud Infrastructure</h3>
+          <ul class="tags accent">
+            <li>AWS</li><li>DuckDB</li><li>Polars</li>
+          </ul>
+          <ul class="bullets">
+            <li>Processed 32M movie ratings using a cloud pipeline (AWS) and local engines (DuckDB/Polars), scaling from 100K to 32M records.</li>
+            <li>Optimized query performance through Parquet format and partitioning, reducing processing time for large aggregations.</li>
+          </ul>
+        </article>
+
       </div>
-      <p class="place">Escola Superior de Tecnologia da Saúde de Lisboa (ESTeSL), Instituto Politécnico de Lisboa — Final grade: 14</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2 class="section-title">Projetos Académicos em Data Science</h2>
+    <section id="credentials" class="reveal">
+      <h2 class="section-title"><span class="num">06</span> Credentials</h2>
+      <div class="cred-grid">
 
-    <div class="entry">
-      <div class="entry-head"><h3>Retail Sales Analytics &amp; Business Intelligence</h3></div>
-      <p class="stack">Power BI · Microsoft Fabric · DAX</p>
-      <ul>
-        <li>Desenvolvida solução de BI end-to-end para dados de retalho multi-localização, com modelo semântico em star schema e múltiplas medidas DAX para análise de vendas e rentabilidade.</li>
-        <li>Dashboards interativos em Power BI para monitorizar receita, margens e desempenho de produto, apoiando decisões em gestão de inventário e pricing.</li>
-      </ul>
-    </div>
+        <article class="cred-col">
+          <h3>Certifications</h3>
+          <ul class="cred-list">
+            <li><strong>MEB Diploma of Merit</strong><span>Ordem dos Engenheiros · 2025</span></li>
+            <li><strong>Good Clinical Practice Certification</strong><span>Alpine 1 Clinical Trial participation · Hospital de Santa Cruz · 2025</span></li>
+            <li><strong>Speaker, VI Jornadas de Cardiopneumologia</strong><span>Workshop on Cardiopulmonary Exercise Testing · Hospital Prof. Dr. Fernando Fonseca · 2025</span></li>
+            <li><strong>Quantitative Research Methodology in Health Sciences</strong><span>Hospital de Santa Cruz · 2023</span></li>
+          </ul>
+        </article>
 
-    <div class="entry">
-      <div class="entry-head"><h3>Employee Attrition Risk Modeling</h3></div>
-      <p class="stack">Python · XGBoost · SMOTE · Hugging Face</p>
-      <ul>
-        <li>Modelo de classificação XGBoost para previsão de turnover, publicado na plataforma Hugging Face.</li>
-        <li>Insights com SHAP/LIME, identificando overtime e satisfação no trabalho como principais fatores de atrito.</li>
-      </ul>
-    </div>
+        <article class="cred-col">
+          <h3>Device Related Training <em>· Medtronic</em></h3>
+          <ul class="cred-list compact">
+            <li><strong>Implantable Cardioverter/Defibrillator Course</strong><span>2025</span></li>
+            <li><strong>CareLink Course</strong><span>2024</span></li>
+            <li><strong>Pacemaker Course</strong><span>2024</span></li>
+            <li><strong>Electrocardiography in Cardiac Pacing</strong><span>2024</span></li>
+            <li><strong>Conduction System Pacing Course</strong><span>2024</span></li>
+            <li><strong>Micra-AV Follow-up</strong><span>2023</span></li>
+            <li><strong>Introduction to Pacemaker Follow-up</strong><span>2021</span></li>
+          </ul>
+        </article>
 
-    <div class="entry">
-      <div class="entry-head"><h3>Colorectal Cancer Survival Prediction</h3></div>
-      <p class="stack">Python · Scikit-learn · SHAP · LIME</p>
-      <ul>
-        <li>Comparação de múltiplos modelos de classificação num dataset clínico real, com feature engineering e afinação de hiperparâmetros.</li>
-        <li>Técnicas de explicabilidade (SHAP/LIME) para identificar fatores preditivos como tamanho do tumor, estádio e tipo de tratamento.</li>
-      </ul>
-    </div>
+      </div>
 
-    <div class="entry">
-      <div class="entry-head"><h3>Database Design &amp; Auction System</h3></div>
-      <p class="stack">SQL · T-SQL · Azure</p>
-      <ul>
-        <li>Sistema de leilões com stored procedures, transações e validação automática de licitações para utilizadores concorrentes.</li>
-        <li>Análise de mercado para identificar localizações ótimas de loja com base em padrões de vendas e dados demográficos.</li>
-      </ul>
-    </div>
+      <h3 class="sub-title">Languages</h3>
+      <div class="lang-row">
+        <div class="lang"><strong>Portuguese</strong><span>Native</span></div>
+        <div class="lang"><strong>English</strong><span>Proficient</span></div>
+        <div class="lang"><strong>Spanish</strong><span>Beginner</span></div>
+        <div class="lang"><strong>French</strong><span>Beginner</span></div>
+      </div>
+    </section>
 
-    <div class="entry">
-      <div class="entry-head"><h3>Big Data Analysis &amp; Cloud Infrastructure</h3></div>
-      <p class="stack">AWS (S3, Glue, Athena) · DuckDB · Polars</p>
-      <ul>
-        <li>Processamento de 32M de avaliações de filmes com pipeline cloud (AWS) e motores locais (DuckDB/Polars), de 100K a 32M de registos.</li>
-        <li>Otimização de queries com formato Parquet e particionamento, reduzindo o tempo de processamento em agregações de grande escala.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="contact" class="reveal contact-block">
+      <h2>Let's talk data.</h2>
+      <p>Open to junior data roles — analysis, science or engineering.</p>
+      <div class="cta-row centered">
+        <a class="btn btn-primary" href="mailto:carlaferreira_97@hotmail.com">carlaferreira_97@hotmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/carla-sofia-ferreira" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
 
-  <section id="certifications">
-    <h2 class="section-title">Certificações</h2>
-    <ul class="plain">
-      <li>MEB Diploma of Merit — Ordem dos Engenheiros, 2025</li>
-      <li>Good Clinical Practice Certification for Alpine 1 Clinical Trial participation — Hospital de Santa Cruz, 2025</li>
-      <li>Speaker, VI Jornadas de Cardiopneumologia, Workshop on Cardiopulmonary Exercise Testing — Hospital Prof. Dr. Fernando Fonseca, 2025</li>
-      <li>Quantitative Research Methodology in Health Sciences — Hospital de Santa Cruz, 2023</li>
-    </ul>
-  </section>
+  </div>
+</main>
 
-  <section id="device-training">
-    <h2 class="section-title">Device Related Training (Medtronic)</h2>
-    <ul class="plain">
-      <li>Implantable Cardioverter/Defibrillator Course — Oct 2025</li>
-      <li>CareLink Course — 2024</li>
-      <li>Pacemaker Course — 2024</li>
-      <li>Electrocardiography in Cardiac Pacing — 2024</li>
-      <li>Conduction System Pacing Course — 2024</li>
-      <li>Micra-AV Follow-up — 2023</li>
-      <li>Introduction to Pacemaker Follow-up — 2021</li>
-    </ul>
-  </section>
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Carla Ferreira</span>
+    <span>Frielas, Loures · Portugal</span>
+  </div>
+</footer>
 
-  <section id="languages">
-    <h2 class="section-title">Línguas</h2>
-    <div class="pill-row">
-      <span>Português (Nativo)</span>
-      <span>Inglês (Proficiente)</span>
-      <span>Espanhol (Iniciante)</span>
-      <span>Francês (Iniciante)</span>
-    </div>
-  </section>
-
-  <footer>
-    <span>&copy; 2026 Carla Ferreira</span>
-    <a href="mailto:carlaferreira_97@hotmail.com">carlaferreira_97@hotmail.com</a>
-  </footer>
-
-</div>
+<script src="script.js"></script>
 </body>
 </html>
