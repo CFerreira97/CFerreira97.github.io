@@ -191,6 +191,8 @@ h1 { margin: 0 0 .5rem; font-size: clamp(2.2rem, 6vw, 3.1rem); line-height: 1.06
 .hero-line {
   margin: 0 0 1.4rem;
   font-size: 1.05rem; color: var(--text); max-width: 46ch;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .cta-row { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.4rem; }
@@ -237,7 +239,11 @@ section { padding: 3.2rem 0; }
 
 .sub-title { margin: 2.4rem 0 1rem; font-size: 1.1rem; }
 
-.lede { margin: 0; font-size: 1.06rem; max-width: 68ch; color: var(--text); }
+.lede {
+  margin: 0; font-size: 1.06rem; max-width: 68ch; color: var(--text);
+  text-align: justify;
+  hyphens: auto;
+}
 
 /* reveal on scroll */
 .reveal {
@@ -327,7 +333,12 @@ section { padding: 3.2rem 0; }
 .grade { margin: 0; font-size: .85rem; color: var(--text-muted); }
 .grade strong { color: var(--text); }
 
-.bullets { margin: .4rem 0 0; padding-left: 1.1rem; font-size: .92rem; color: var(--text-muted); }
+.bullets {
+  margin: .4rem 0 0; padding-left: 1.1rem;
+  font-size: .92rem; color: var(--text-muted);
+  text-align: justify;
+  hyphens: auto;
+}
 .bullets li { margin-bottom: .28rem; }
 .bullets li::marker { color: var(--accent); }
 
