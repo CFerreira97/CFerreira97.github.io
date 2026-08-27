@@ -1,0 +1,22 @@
+[project]
+name = "CFerreira97.github.io"
+version = "0.1.0"
+description = "Página pessoal / portfolio da Carla Ferreira para anexar ao CV"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic-settings>=2.0.0",
+]
+
+[project.scripts]
+cferreira97_github_io = "cferreira97_github_io:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.1",
+]

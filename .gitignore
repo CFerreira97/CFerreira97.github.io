@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment variables
+.env
+
+# Logs
+logs/*.log
+
+# Cache
+.ruff_cache/
+
+# Agent tooling and nucleus metadata: the user's own methodology
+# (subagents, skills, hooks, playbooks). Pulled in for local Claude Code
+# sessions, never committed to a project's own (often public) history.
+/.claude/
+/docs/agents/
+/.xorgentic/
+/CLAUDE.md
